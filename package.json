@@ -1,0 +1,29 @@
+{
+  "name": "pokedex-typescript-lite",
+  "version": "1.0.0",
+  "description": "Aplicação de terminal em Node.js + TypeScript que consulta a PokeAPI e gerencia um catálogo local de Pokémon.",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "dev": "tsx src/main.ts",
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "pokeapi",
+    "typescript",
+    "nodejs",
+    "cli",
+    "pokemon"
+  ],
+  "author": "Lucas Rosa (LucasR0sa)",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.9.3",
+    "eslint": "^10.5.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1"
+  }
+}

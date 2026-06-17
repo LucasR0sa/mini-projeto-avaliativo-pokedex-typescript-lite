@@ -1,0 +1,9 @@
+# Dependências e artefatos de build
+node_modules/
+dist/
+
+# Configuração/anotações do Claude Code (não vai pro repositório)
+.claude/
+
+# Enunciado e arquivos de escritório (não são código-fonte)
+*.docx
