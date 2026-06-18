@@ -1,7 +1,11 @@
 import { PokemonResumo } from "../models/Pokemon";
 
 export class CatalogoPokemon {
-    private pokemons: PokemonResumo[] = [];
+    private pokemons: PokemonResumo[];
+
+    constructor(pokemonsIniciais: PokemonResumo[] = []) {
+        this.pokemons = pokemonsIniciais;
+    }
 
     adicionar(pokemon: PokemonResumo): void {
         const jaExiste = this.pokemons.some((p) => p.id === pokemon.id);
@@ -14,7 +18,6 @@ export class CatalogoPokemon {
         this.pokemons.push(pokemon);
         console.log(`[OK] ${pokemon.nome} adicionado ao catálogo.`);
     }
-
 
     listar(): void {
         if (this.pokemons.length === 0) {
@@ -41,5 +44,7 @@ export class CatalogoPokemon {
         console.log(`[OK] Pokémon com ID ${id} removido do catálogo.`);
     }
 
-
+    obterTodos(): PokemonResumo[] {
+        return this.pokemons;
+    }
 }
